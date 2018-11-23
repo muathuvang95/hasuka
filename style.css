@@ -6,3 +6,17 @@ Author URI: https://sps.vn/
 Description: Dự án website Hasuka
 Version: 1.0
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&subset=vietnamese');
+body {
+	font-family: 'Roboto', arial, sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+
+@media (min-width: 1200px) {
+	.col-lg-5ths {
+		width: 20%;
+		float: left;
+	}
+}
