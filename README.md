@@ -1,2 +1,0 @@
-# hasuka
-themes website hasuka

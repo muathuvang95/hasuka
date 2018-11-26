@@ -8,4 +8,6 @@ hasuka_home_product_cats();
 
 hasuka_home_contact_infos();
 
+hasuka_home_posts();
+
 get_footer();

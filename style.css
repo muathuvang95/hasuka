@@ -12,11 +12,114 @@ body {
 	font-size: 14px;
 	overflow-x: hidden;
 }
+.site-header {
+	background: #f6f6f6;
+}
 
+.site-header > .container {
+	position: relative;
+}
+.custom-logo-link {
+	display: none;
+}
+.custom-logo-link img{
+	height: 52px;	
+	width: auto;
+	margin: 24px auto;
+}
+
+#mega-menu-wrap-top-menu,
+#mega-menu-wrap-top-menu #mega-menu-top-menu {
+	position: static;
+}
+
+#mega-menu-wrap-top-menu{
+	float: right;
+	background: transparent;
+	clear: none;
+	width: 100%;
+}
+#mega-menu-wrap-top-menu #mega-menu-top-menu {
+ 	position: fixed;
+    left: 0;
+    z-index: 9999;
+    bottom: 0;
+    top: 0;
+    overflow-y: auto;
+    width: 320px;
+}
+#mega-menu-wrap-top-menu #mega-menu-top-menu > li.mega-menu-item > a.mega-menu-link {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #333;
+	padding: 0 16px;
+}
+#mega-menu-wrap-top-menu #mega-menu-top-menu > li.mega-menu-item > a.mega-menu-link:hover,
+#mega-menu-wrap-top-menu #mega-menu-top-menu > li.mega-menu-item > a.mega-menu-link:focus {
+	background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.1));
+	color: #ed1c24;
+}
+#mega-menu-wrap-top-menu #mega-menu-top-menu > li.mega-menu-megamenu > ul.mega-sub-menu {
+	border-top: 2px #ed1c24 solid;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.home-wrap-recent_posts {
+	position: relative;
+	height: 0;
+	padding-top: 70%; 
+	overflow: hidden;
+	background: #666;
+
+}
+.home-wrap-recent_posts a img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+@media (min-width: 768px){
+	
+
+}
+@media (min-width: 992px){
+
+}
+@media (max-width: 1024px)	{
+	.site-header > .container{
+		width: 100%;
+		padding: 0;
+	}
+	
+}
+@media (min-width: 1024px)	{
+	.custom-logo-link {
+		display: inline-block;
+		float: left;
+	}
+	#mega-menu-wrap-top-menu{
+		width: auto;
+	}
+	#mega-menu-wrap-top-menu #mega-menu-top-menu {
+	 	position: static;
+	    width: auto;
+	}
+	#mega-menu-wrap-top-menu #mega-menu-top-menu > li.mega-menu-item > a.mega-menu-link {
+		padding: 30px 18px;
+		height: auto;
+	}
+}
 
 @media (min-width: 1200px) {
 	.col-lg-5ths {
 		width: 20%;
 		float: left;
 	}
+	
+
+	
+	
+
 }
+

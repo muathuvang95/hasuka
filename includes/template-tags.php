@@ -54,3 +54,41 @@ function hasuka_home_contact_infos() {
 	</div>
 	<?php
 }
+function hasuka_home_posts(){
+	
+	$posts = wp_get_recent_posts(array(
+		'numberposts' => 10,
+		'post_status' => 'publish',
+	), OBJECT);
+	?>
+	<div class="home-recent_posts">
+		<div class="container">
+			<div class="owl-carousel owl-theme home-recent_posts-carousel">
+			<?php
+			wp_reset_postdata();
+			foreach ($posts as $key => $post) {
+				global $post;
+				setup_postdata($post);
+				debug($post);
+				?>
+				<div class="home-wrap-recent_posts">
+					<a href="<?php the_permalink(); ?>">
+						<?php echo get_the_post_thumbnail( get_the_ID(), 'large', array('alt'=>esc_attr(get_the_title())) ); ?>
+						<div class="info">
+							<?php 
+								the_title();
+								
+								the_excerpt();
+							?>
+						</div>
+					</a>
+				</div>
+				<?php
+			}
+			wp_reset_postdata();
+			?>
+			</div>
+		</div>
+	</div>
+	<?php
+}
