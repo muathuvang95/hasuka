@@ -72,7 +72,7 @@ function hasuka_home_posts(){
 			while($query->have_posts()):
 				$query->the_post();
 				?>
-				<div class="home-wrap-recent_posts">
+				
 					<a href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail( 'large', array('alt'=>esc_attr(get_the_title())) ); ?>
 						<div class="info">
@@ -80,7 +80,7 @@ function hasuka_home_posts(){
 							<div class="excerpt"><?php the_excerpt(); ?></div>
 						</div>
 					</a>
-				</div>
+				
 				<?php
 	
 			endwhile;

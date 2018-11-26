@@ -64,7 +64,8 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
-.home-wrap-recent_posts {
+.home-recent_posts-carousel a {
+	display: block;
 	position: relative;
 	height: 0;
 	padding-top: 70%; 
@@ -72,12 +73,21 @@ body {
 	background: #666;
 
 }
-.home-wrap-recent_posts a img{
+.home-recent_posts-carousel a img {
 	position: absolute;
-	width: 100%;
+	width: 150% !important;
 	height: auto;
 	top: 50%;
-	transform: translateY(-50%); 
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+.home-recent_posts-carousel a .info {
+	position: absolute;
+	width: 100%;
+	border: 0 #fff solid;
+	background: rgba(255,255,255, 0.4);
+	bottom: 0;
+	z-index: 100;
 }
 @media (min-width: 768px){
 	
