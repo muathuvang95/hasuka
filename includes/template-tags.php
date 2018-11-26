@@ -76,8 +76,10 @@ function hasuka_home_posts(){
 					<a href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail( 'large', array('alt'=>esc_attr(get_the_title())) ); ?>
 						<div class="info">
-							<h3><?php the_title(); ?></h3>
-							<div class="excerpt"><?php the_excerpt(); ?></div>
+							<div>
+								<h3><?php the_title(); ?></h3>
+								<div class="excerpt"><?php the_excerpt(); ?></div>
+							</div>
 						</div>
 					</a>
 				

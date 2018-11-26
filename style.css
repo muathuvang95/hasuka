@@ -92,8 +92,14 @@ body {
 	padding: 15px;
 	font-size: 14px;
 	color: #ccc;
+	height: 115px;
+}
+.home-recent_posts-carousel a .info > div {
+	height: 100%;
+	overflow: hidden;
 }
 .home-recent_posts-carousel a .info h3 {
+	margin-top: 0;
 	font-size: 16px;
 	color: #fff;
 }
