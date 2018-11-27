@@ -28,7 +28,7 @@ function hasuka_home_product_cats() {
 function hasuka_home_contact_infos() {
 	$hotline = fw_get_db_settings_option('hotline');
 	$contacts = fw_get_db_settings_option('contacts');
-	//print_r($contacts);
+	print_r($contacts);
 	?>
 	<div class="home-contact-infos">
 		<div class="container">
@@ -95,3 +95,27 @@ function hasuka_home_posts(){
 	endif;
 }
 
+function hasuka_home_intro_infos() {
+	$intros = fw_get_db_settings_option('intros');
+	//print_r($intros);
+	?>
+	<div class="home-intro-infos">
+		<div class="container">
+			<div class="row intro-colums">
+				<?php
+				foreach ($intros as $intro) {
+					//debug($intro);
+					?>
+					<div class="col-sm-4">
+						<div class="icon"><i class="<?php  echo $intro['icon']['icon-class']; ?>"></i></div>
+						<div class="heading"><?=esc_html($intro['header'])?></div>
+						<div class="info"><?=format_content($intro['body'])?></div>
+					</div>
+					<?php
+				}
+				?>
+			</div>
+		</div>
+	</div>
+	<?php
+}

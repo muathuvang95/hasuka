@@ -68,7 +68,8 @@ body {
 	margin-top: 20px;
 
 }
-.home-product_cats-carousel.owl-theme .owl-nav [class*=owl-] {
+.home-product_cats-carousel.owl-theme .owl-nav [class*=owl-],
+.home-recent_posts-carousel.owl-theme .owl-nav [class*=owl-] {
 	position: absolute;
     top: 50%;
     width: 33px;
@@ -81,15 +82,18 @@ body {
     margin: -39.5px 0 0 0;
     font-size: 30px;
 }
+.home-recent_posts-carousel.owl-theme .owl-nav [class*=owl-] {
+	margin: 0;
+}
 .home-product_cats-carousel.owl-theme .owl-nav [class*=owl-]:focus,
 .home-product_cats-carousel.owl-theme .owl-nav [class*=owl-]:hover {
 	outline: none;
 }
 
-.home-product_cats-carousel .owl-prev {
+.home-product_cats-carousel .owl-prev, .home-recent_posts-carousel .owl-prev {
 	left: -48px;
 }
-.home-product_cats-carousel .owl-next {
+.home-product_cats-carousel .owl-next, .home-recent_posts-carousel .owl-next {
 	right: -48px;
 }
 .home-recent_posts-carousel a {

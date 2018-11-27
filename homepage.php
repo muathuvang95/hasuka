@@ -10,4 +10,6 @@ hasuka_home_contact_infos();
 
 hasuka_home_posts();
 
+hasuka_home_intro_infos();
+
 get_footer();

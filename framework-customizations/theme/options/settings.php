@@ -10,4 +10,5 @@
 $options = array(
 	fw()->theme->get_options( 'general-settings' ),
 	fw()->theme->get_options( 'contact-settings' ),
+	fw()->theme->get_options( 'intro' ),
 );
