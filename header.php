@@ -29,6 +29,8 @@
 		if(function_exists('masterslider')) {
 			masterslider($slider);
 		}
+	} else {
+		hasuka_breadcrumb();
 	}
 	?>
 	<div id="main">

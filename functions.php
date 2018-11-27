@@ -13,7 +13,14 @@ define('INC_PATH', THEME_PATH.'/includes');
 
 define('LIB_URL', THEME_URL.'/libraries');
 
-require_once INC_PATH.'/functions.php';
+require_once INC_PATH.'/helper.php';
 require_once INC_PATH.'/hooks.php';
 require_once INC_PATH.'/hook-functions.php';
 require_once INC_PATH.'/template-tags.php';
+require_once INC_PATH.'/ajax.php';
+
+if(woocommerce_exists()) {
+	require_once INC_PATH.'/woocommerce/wc-hooks.php';
+	require_once INC_PATH.'/woocommerce/wc-hook-functions.php';
+	require_once INC_PATH.'/woocommerce/wc-template-tags.php';
+}

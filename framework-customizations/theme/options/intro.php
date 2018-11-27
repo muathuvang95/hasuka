@@ -54,9 +54,9 @@ $options = array (
                                  */
 
                                 'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
-                                'label' => __('Label', '{domain}'),
-                                'desc'  => __('Description', '{domain}'),
-                                'help'  => __('Help tip', '{domain}'),
+                                'label' => __('Label'),
+                                'desc'  => __('Description'),
+                                'help'  => __('Help tip'),
 		                    ),
                             'header'   => array(
                                 'label' => __( 'Header' ),

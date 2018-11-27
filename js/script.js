@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 		loop:true,
 		margin:10,
 		responsiveClass:true,
-		nav:true,
+		nav:false,
 		dots:false,
 		responsive:{
 			0:{
@@ -16,6 +16,9 @@ jQuery(document).ready(function($){
 			},
 			768:{
 				items:3
+			},
+			1024: {
+				nav: true
 			}
 		}
 	});
@@ -23,7 +26,7 @@ jQuery(document).ready(function($){
 		loop:true,
 		margin:10,
 		responsiveClass:true,
-		nav:true,
+		nav:false,
 		dots:false,
 		responsive:{
 			0:{
@@ -34,6 +37,9 @@ jQuery(document).ready(function($){
 			},
 			768:{
 				items:2
+			},
+			1024: {
+				nav: true
 			}
 		}
 	});

@@ -199,6 +199,14 @@ function term_name_map($term) {
 /*
  debug variable
  */
-function debug($var) {
+function pre($var) {
   echo '<pre>'.print_r($var, true).'</pre>';
+}
+
+function unyson_exists() {
+	return defined('FW');
+}
+
+function woocommerce_exists() {
+	return class_exists( 'WooCommerce' ) ? true : false;
 }

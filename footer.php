@@ -34,7 +34,7 @@
 					</div>
 					<div class="col-sm-12 col-md-6">
 						<?php
-						$text_copyright = fw_get_db_settings_option('text-copyright');
+						$text_copyright = (unyson_exists()) ? fw_get_db_settings_option('text-copyright') : '';
 						if($text_copyright!='') {
 							echo '<div class="text-copyright">'.format_content($text_copyright).'</div>';
 						}

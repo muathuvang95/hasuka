@@ -50,11 +50,29 @@ function hasuka_setup() {
 		'flex-height'  => true,
 	) );
 
+	// Declare WooCommerce support.
+		add_theme_support( 'woocommerce', array(
+			'single_image_width'    => 600,
+			'thumbnail_image_width' => 360,
+			'product_grid'          => array(
+				'default_columns' => 3,
+				'default_rows'    => 4,
+				'min_columns'     => 1,
+				'max_columns'     => 6,
+				'min_rows'        => 1
+			)
+		) );
 
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 }
 
 function hasuka_scripts() {
-	fw()->backend->option_type('icon-v2')->packs_loader->enqueue_frontend_css();
+	if ( unyson_exists() ) {
+		fw()->backend->option_type('icon-v2')->packs_loader->enqueue_frontend_css();
+	}
+	
 	wp_enqueue_style( 'bootstrap', LIB_URL . '/bootstrap/css/bootstrap.min.css' );
 	wp_enqueue_style( 'owl-carousel', LIB_URL . '/owl-carousel/dist/assets/owl.carousel.min.css' );
 	wp_enqueue_style( 'owl-carousel-theme', LIB_URL . '/owl-carousel/dist/assets/owl.theme.default.min.css' );

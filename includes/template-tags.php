@@ -26,8 +26,8 @@ function hasuka_home_product_cats() {
 }
 
 function hasuka_home_contact_infos() {
-	$hotline = fw_get_db_settings_option('hotline');
-	$contacts = fw_get_db_settings_option('contacts');
+	$hotline = (unyson_exists()) ? fw_get_db_settings_option('hotline') : '';
+	$contacts = (unyson_exists()) ? fw_get_db_settings_option('contacts') : false;
 	//print_r($contacts);
 	?>
 	<div class="home-contact-infos">
@@ -36,6 +36,7 @@ function hasuka_home_contact_infos() {
 				<p>DỊCH VỤ HỖ TRỢ</p>
 				<p>Hotline: <a href="tel:<?=esc_attr($hotline)?>"><?=esc_html($hotline)?></a></p>
 			</div>
+			<?php if($contacts): ?>
 			<div class="row contact-colums">
 				<?php
 				foreach ($contacts as $contact) {
@@ -50,6 +51,7 @@ function hasuka_home_contact_infos() {
 				}
 				?>
 			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 	<?php
@@ -60,7 +62,9 @@ function hasuka_home_posts(){
 	$query = new WP_Query(array(
 		'post_type' => 'post',
 		'posts_per_page' => 12,
-		'post_status' => 'publish'
+		'post_status' => 'publish',
+		'orderby' => 'date',
+		'order' => 'desc',
 	));
 
 	if($query->have_posts()):
@@ -96,8 +100,9 @@ function hasuka_home_posts(){
 }
 
 function hasuka_home_intro_infos() {
-	$intros = fw_get_db_settings_option('intros');
-	//print_r($intros);
+	$intros = (unyson_exists()) ? fw_get_db_settings_option('intros') : false;
+	
+	if($intros):
 	?>
 	<div class="home-intro-infos">
 		<div class="container">
@@ -118,10 +123,25 @@ function hasuka_home_intro_infos() {
 		</div>
 	</div>
 	<?php
+	endif;
 }
 
 function backtop_button() {
 	?>
 	<button id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+	<?php
+}
+
+function hasuka_breadcrumb() {
+	?>
+	<div class="hasuka-breadcrumb">
+		<div class="container">
+			<?php
+			if(woocommerce_exists()) {
+				woocommerce_breadcrumb();
+			}
+			?>
+		</div>
+	</div>
 	<?php
 }

@@ -1,21 +1,19 @@
 <?php
-
+/*
+ Template Name: No Sidebar
+ */
 get_header();
 ?>
 <div class="container main-content">
 	<div class="row">
-		<div class="col-md-9 content-area">
+		<div class="col-xs-12 content-area">
 			<?php
 			while (have_posts()) {
 				the_post();
-
-				the_title();
-				
 				the_content();
 			}
 			?>
 		</div>
-		<?php  get_sidebar(); ?>
 	</div>
 </div>
 <?php
