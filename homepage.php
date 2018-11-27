@@ -13,6 +13,3 @@ hasuka_home_posts();
 hasuka_home_intro_infos();
 
 get_footer();
-?> 
-
-<button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>

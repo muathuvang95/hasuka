@@ -119,3 +119,9 @@ function hasuka_home_intro_infos() {
 	</div>
 	<?php
 }
+
+function backtop_button() {
+	?>
+	<button id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+	<?php
+}
