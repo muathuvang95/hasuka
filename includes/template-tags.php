@@ -28,7 +28,7 @@ function hasuka_home_product_cats() {
 function hasuka_home_contact_infos() {
 	$hotline = fw_get_db_settings_option('hotline');
 	$contacts = fw_get_db_settings_option('contacts');
-	print_r($contacts);
+	//print_r($contacts);
 	?>
 	<div class="home-contact-infos">
 		<div class="container">

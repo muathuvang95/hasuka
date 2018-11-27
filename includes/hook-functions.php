@@ -54,7 +54,7 @@ function hasuka_setup() {
 }
 
 function hasuka_scripts() {
-	
+	fw()->backend->option_type('icon-v2')->packs_loader->enqueue_frontend_css();
 	wp_enqueue_style( 'bootstrap', LIB_URL . '/bootstrap/css/bootstrap.min.css' );
 	wp_enqueue_style( 'owl-carousel', LIB_URL . '/owl-carousel/dist/assets/owl.carousel.min.css' );
 	wp_enqueue_style( 'owl-carousel-theme', LIB_URL . '/owl-carousel/dist/assets/owl.theme.default.min.css' );

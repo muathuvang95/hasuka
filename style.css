@@ -12,6 +12,7 @@ body {
 	font-size: 14px;
 	overflow-x: hidden;
 }
+/* header */
 .site-header {
 	background: #f6f6f6;
 }
@@ -28,11 +29,11 @@ body {
 	margin: 24px auto;
 }
 
+/* meunu header */
 #mega-menu-wrap-top-menu,
 #mega-menu-wrap-top-menu #mega-menu-top-menu {
 	position: static;
 }
-
 #mega-menu-wrap-top-menu{
 	float: right;
 	background: transparent;
@@ -64,9 +65,10 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
+
+/* slider 1 */
 .home-product_cats-carousel {
 	margin-top: 20px;
-
 }
 .home-product_cats-carousel.owl-theme .owl-nav [class*=owl-],
 .home-recent_posts-carousel.owl-theme .owl-nav [class*=owl-] {
@@ -96,6 +98,42 @@ body {
 .home-product_cats-carousel .owl-next, .home-recent_posts-carousel .owl-next {
 	right: -48px;
 }
+
+/* support */
+.home-contact-infos .container {
+	margin-top: 20px;
+}
+.home-contact-infos .hotline {
+	text-align: center;
+    font-size: 37px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.home-contact-infos .hotline a{
+	color: #e74c3c;
+    font-weight: normal;
+    text-decoration: none;	
+}
+
+.contact-colums .icon img{
+	height: auto;
+	width: 39px;
+}
+.contact-colums .col-sm-4 {
+	text-align: center;
+	color: #333333;
+	font-size: 15px;
+	font-family: Roboto,arial, Helvetica, sans-serif;
+}
+.contact-colums .col-sm-4 a{
+	color:#333;
+	text-decoration: underline;
+}
+.contact-colums .col-sm-4 a:hover {
+	color: #23527c;
+}
+
+/* slider 2 */
 .home-recent_posts-carousel a {
 	display: block;
 	position: relative;
@@ -135,40 +173,32 @@ body {
 	color: #fff;
 }
 
-.home-contact-infos .container {
-	margin-top: 20px;
+/* intro */
+.home-intro-infos {
+	margin: 30px 0px;
+    line-height: 20px;
 }
-.home-contact-infos .hotline {
-	text-align: center;
-    font-size: 37px;
-    font-weight: 300;
-    margin-bottom: 20px;
+.intro-colums .col-sm-4 .icon{
+	font-family: FontAwesome;
+    font-size: 40px;
+    margin: auto;
+    color: #333;
+    text-align: center;
+    padding-left: 0px;
 }
-.home-contact-infos .hotline a{
-	color: #e74c3c;
-    font-weight: normal;
-    text-decoration: none;	
+.intro-colums .col-sm-4 .heading{
+	display: block;
+    text-align: center;
+    margin: 15px 0 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
-
-.contact-colums .icon img{
-	height: auto;
-	width: 39px;
-}
-.contact-colums .col-sm-4 {
-	text-align: center;
-	color: #333333;
-	font-size: 15px;
-	font-family: Roboto,arial, Helvetica, sans-serif;
-}
-.contact-colums .col-sm-4 a{
-	color:#333;
-	text-decoration: underline;
-}
-.contact-colums .col-sm-4 a:hover {
-	color: #23527c;
+.intro-colums .col-sm-4 .info {
+	text-align: justify;
 }
 
-
+/* footer */
 #site-footer .footer-colums {
 	font-family: Roboto,arial, Helvetica, sans-serif;
     background: #F5F5F5;
@@ -193,6 +223,94 @@ body {
 	width: auto;
 	margin: 0;
 }
+.widget-title {
+	font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0 10px;
+    font-family: Roboto,arial, Helvetica, sans-serif;
+    border-bottom: 0px dotted #000;
+    padding-bottom: 10px;
+    color: #000;
+}
+.footer-colums .row {
+	margin-right: 0;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.footer-colums .colums a {
+	margin-bottom: 0;
+	font-family: Roboto,arial, Helvetica, sans-serif;
+	line-height: 1.8;
+	color: #333333;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.footer-colums .colums ul {
+	list-style: none;
+	padding: 0;
+}
+.footer-colums .colums>div {
+	padding: 0;
+}
+
+.menu-footer-1 a:focus, a:hover {
+
+}
+.fa-envelope-o, .fa-wifi, .fa-taxi, .fa-desktop {
+	color: red;
+}
+
+/* coppyright */
+.footer-copyright {
+	background: #666666;
+    color: #000;
+    overflow: hidden;
+    padding: 20px 0 40px;
+    font: normal 13px Arial, Helvetica, sans-serif;
+}
+.footer-copyright .row a {
+	font-family: Roboto,arial, Helvetica, sans-serif;
+	float: left;
+    padding: 10px 20px 10px 0px;
+    color: #EEEEEE;
+    font-size: 15px;
+
+}
+.footer-copyright .row ul {
+	list-style: none;
+}
+.footer-copyright .row #menu-footer-menu {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	height: 100%;
+}
+.text-copyright {
+    text-align: right;
+    font-family: Roboto,arial, Helvetica, sans-serif;
+    color: #CCCCBF;
+    font-size: 15px;
+}
+
+/* scroll back to top*/
+#back-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+    border: 0;
+	padding: 0;
+}
+#back-to-top i {
+    background: #E00C3D;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 @media (min-width: 768px){
 	
 
