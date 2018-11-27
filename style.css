@@ -64,6 +64,29 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
+.home-product_cats-carousel {
+	margin-top: 20px;
+
+}
+.home-product_cats-carousel .owl-nav button {
+    width: 33px;
+    height: 79px;
+    line-height: 79px;
+    background-color: #dddddd;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -39.5px; 
+}
+
+.home-product_cats-carousel .owl-prev {
+	left: -48px;
+}
+.home-product_cats-carousel .owl-next {
+	right: -48px;
+}
 .home-recent_posts-carousel a {
 	display: block;
 	position: relative;
@@ -71,7 +94,6 @@ body {
 	padding-top: 70%; 
 	overflow: hidden;
 	background: #666;
-
 }
 .home-recent_posts-carousel a img {
 	position: absolute;
@@ -103,6 +125,65 @@ body {
 	font-size: 16px;
 	color: #fff;
 }
+
+.home-contact-infos .container {
+	margin-top: 20px;
+}
+.home-contact-infos .hotline {
+	text-align: center;
+    font-size: 37px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.home-contact-infos .hotline a{
+	color: #e74c3c;
+    font-weight: normal;
+    text-decoration: none;	
+}
+
+.contact-colums .icon img{
+	height: auto;
+	width: 39px;
+}
+.contact-colums .col-sm-4 {
+	text-align: center;
+	color: #333333;
+	font-size: 15px;
+	font-family: Roboto,arial, Helvetica, sans-serif;
+}
+.contact-colums .col-sm-4 a{
+	color:#333;
+	text-decoration: underline;
+}
+.contact-colums .col-sm-4 a:hover {
+	color: #23527c;
+}
+
+
+#site-footer .footer-colums {
+	font-family: Roboto,arial, Helvetica, sans-serif;
+    background: #F5F5F5;
+    color: #333333;
+    padding: 10px 0px 0px 0px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+.site-footer .container {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-logo {
+	height: 36px;
+	width: 100%;
+	margin-top: 20px;
+}
+.footer-logo img  {
+	max-height: 35px;
+	width: auto;
+	margin: 0;
+}
 @media (min-width: 768px){
 	
 
@@ -128,7 +209,7 @@ body {
 	#mega-menu-wrap-top-menu #mega-menu-top-menu {
 	 	position: static;
 	    width: auto;
-	    overflow-y: hidden;
+	    overflow-y: visible;
 	}
 
 	#mega-menu-wrap-top-menu #mega-menu-top-menu > li.mega-menu-item > a.mega-menu-link {
