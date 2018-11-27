@@ -68,7 +68,9 @@ body {
 	margin-top: 20px;
 
 }
-.home-product_cats-carousel .owl-nav button {
+.home-product_cats-carousel.owl-theme .owl-nav [class*=owl-] {
+	position: absolute;
+    top: 50%;
     width: 33px;
     height: 79px;
     line-height: 79px;
@@ -76,9 +78,12 @@ body {
     text-align: center;
     color: #ffffff;
     border-radius: 2px;
-    position: absolute;
-    top: 50%;
-    margin-top: -39.5px; 
+    margin: -39.5px 0 0 0;
+    font-size: 30px;
+}
+.home-product_cats-carousel.owl-theme .owl-nav [class*=owl-]:focus,
+.home-product_cats-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+	outline: none;
 }
 
 .home-product_cats-carousel .owl-prev {
